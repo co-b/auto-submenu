@@ -4,7 +4,7 @@
 Plugin Name: Auto Submenu
 Plugin URI: http://jamocreations.com/en/artikelen/auto-submenu
 Description: By default, WordPress can only automatically add new top-level pages to your custom menu. With this plugin, new child pages will also be automatically added to your custom menu.
-Version: 0.1
+Version: 0.2
 Author: Jamo Web Creations
 Author URI: http://jamocreations.com/
 License: GPL2
@@ -71,7 +71,7 @@ class AutoSubmenu {
 			foreach ( $menu_items as $menu_item ) {
 				// Item already in menu?
 				if ( $menu_item->object_id == $post->ID ) {
-					return;
+					continue 2;
 				}
 				if ( $menu_item->object_id == $post->post_parent ) {
 					$menu_parent = $menu_item;
@@ -86,7 +86,6 @@ class AutoSubmenu {
 					'menu-item-type' => 'post_type',
 					'menu-item-status' => 'publish'
 				) );
-				return;
 			}
 		}
 	}
