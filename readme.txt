@@ -1,8 +1,8 @@
 === Auto Submenu ===
 Contributors: jamocreations
-Tags: admin, menu, submenu, subpages, child pages
+Tags: admin, menu, submenu, subpages, child pages, page, pages, navigation
 Requires at least: 3.0
-Tested up to: 3.5.1
+Tested up to: 3.9
 Stable tag: 0.2
 
 WordPress can only automatically add new top-level pages to menus. With Auto Submenu, new child pages will also be automatically added to menus.
