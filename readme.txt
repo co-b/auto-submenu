@@ -1,3 +1,7 @@
+This fork enables auto-adding subpages to all menus without needing to check "automatically add top level pages".
+This prevents the issue where a client adds a new parentless page and it automatically gets appended to every existing menu.
+
+
 === Auto Submenu ===
 Contributors: jamocreations
 Tags: admin, menu, submenu, subpages, child pages, page, pages, navigation
